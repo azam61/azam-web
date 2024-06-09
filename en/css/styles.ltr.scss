@@ -1,0 +1,126 @@
+@import '../../css/var';
+@import '../../css/mixin';
+
+.background.gradient {
+  background-image:linear-gradient(135deg, #003073, #029797)
+}
+
+.my-resume {
+
+  @media screen and (min-width: 768px) {
+    margin-left: 5rem;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+
+  aside {
+    @media screen and (min-width: 768px) {
+      margin-left: -5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: .5rem;
+    }
+
+    ul.nav {
+
+      li.nav-item {
+
+        &:not(:last-child) .nav-link {
+          &::before {
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .card-scrollspy {
+
+    @media screen and (min-width: 1200px) {
+      right:0;
+      left:560px;
+      border-radius: 0 $baseRadius $baseRadius 0;
+    }
+
+    .section-title {
+
+      &::before {
+        right: auto;
+        left: 22px;
+        background: linear-gradient(-45deg,
+            rgba(11, 187, 180, 0.01) 0%,
+            rgba(11, 187, 180, 0.15) 100%);
+      }
+
+      @include border-line-h($background: radial-gradient(ellipse at left,
+          #dddddd 0%,
+          rgba(255, 255, 255, 0) 70%))
+    }
+
+    .d-flex>div {
+
+      &:first-child {
+        &::before{
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+
+    .section-themes,
+    .section-etudes {
+      .item-box {
+        figure {
+
+          &::before {
+            right: 0;
+            left: auto;
+            background: linear-gradient(-65deg,
+                rgba(11, 187, 180, 0.01) 0%,
+                rgba(11, 187, 180, 0.3) 100%);
+          }
+        }
+      }
+    }
+  }
+
+  .profile-content {
+
+    @media screen and (min-width: 768px) {
+      &::after {
+        right: auto;
+        left: -1rem;
+        background: linear-gradient(135deg,
+            rgba(46, 202, 127, 0.15) 0,
+            rgba(46, 202, 127, 0.01) 100%);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+      &::before {
+        right: 0;
+        left: auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    .links {
+
+      a {
+
+        &:first-child {
+          &::before {
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+
+.background.gradient {
+  background-image: linear-gradient(135deg, #003073, #029797);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+@media screen and (min-width: 768px) {
+  .my-resume {
+    margin-right: 0;
+    margin-left: 5rem; } }
+@media screen and (min-width: 1200px) {
+  .my-resume {
+    margin-left: 0; } }
+@media screen and (min-width: 768px) {
+  .my-resume aside {
+    margin: 0 0 0 -5rem; } }
+@media screen and (min-width: 1200px) {
+  .my-resume aside {
+    margin: 1rem .5rem 0 0; } }
+.my-resume aside ul.nav li.nav-item:not(:last-child) .nav-link::before {
+  right: 0;
+  left: auto; }
+@media screen and (min-width: 1200px) {
+  .my-resume .card-scrollspy {
+    right: 0;
+    left: 560px;
+    border-radius: 0 0.25rem 0.25rem 0; } }
+.my-resume .card-scrollspy .section-title {
+  position: relative; }
+  .my-resume .card-scrollspy .section-title::before {
+    right: auto;
+    left: 22px;
+    background: linear-gradient(-45deg, rgba(11, 187, 180, 0.01) 0%, rgba(11, 187, 180, 0.15) 100%); }
+  .my-resume .card-scrollspy .section-title::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(ellipse at left, #dddddd 0%, rgba(255, 255, 255, 0) 70%); }
+.my-resume .card-scrollspy .d-flex > div:first-child::before {
+  right: 0;
+  left: auto; }
+.my-resume .card-scrollspy .section-themes .item-box figure::before,
+.my-resume .card-scrollspy .section-etudes .item-box figure::before {
+  right: 0;
+  left: auto;
+  background: linear-gradient(-65deg, rgba(11, 187, 180, 0.01) 0%, rgba(11, 187, 180, 0.3) 100%); }
+.my-resume .card-scrollspy .section-awards .myswiper {
+  width: 90%; }
+@media screen and (min-width: 768px) {
+  .my-resume .profile-content::after {
+    right: auto;
+    left: -1rem;
+    background: linear-gradient(135deg, rgba(46, 202, 127, 0.15) 0, rgba(46, 202, 127, 0.01) 100%); } }
+@media screen and (min-width: 1200px) {
+  .my-resume .profile-content::before {
+    right: 0;
+    left: auto;
+    -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05); } }
+.my-resume .profile-content .links a:first-child::before {
+  right: 0;
+  left: auto; }
+
+/*# sourceMappingURL=styles.ltr.css.map */
